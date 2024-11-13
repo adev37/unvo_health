@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#contact{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(236,236,236); */
+}
+
+#contact h1{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 400;
+    color: teal;
+    padding: 10vh 0;
+}
+
+#contact_us{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10vh;
+    /* background-color: red; */
+}
+
+#map, #address{
+    width: calc(50% - 20px);
+}
+
+#map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#address_icon{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#address_icon i{
+    font-size: 1.8vw;
+    color: teal;
+    margin-right: 30px;
+}
+
+#address_icon h2{
+    color: teal;
+    font-size: 1.8vw;
+    font-weight: 400;
+}
+
+#address_icon p{
+    color: grey;
+    font-size: 1.1vw;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:768px) {
+    #contact h1{
+        padding: 5vh 0;
+    }
+
+    #map, #address{
+        width: calc(50% - 10px);
+    }
+    
+    #address_icon{
+        margin-bottom: 2.5vw;
+    }
+
+    #address_icon i{
+        font-size: 2vw;
+        margin-right: 10px;
+    }
+    
+    #address_icon h2{
+        font-size: 2vw;
+    }
+    
+    #address_icon p{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    
+    #map, #address{
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    #map iframe{
+        height: 100%;
+    }
+
+    #address_icon i{
+        font-size: 2.8vw;
+    }
+    
+    #address_icon h2{
+        font-size: 3vw;
+    }
+    
+    #address_icon p{
+        font-size: 2.5vw;
+    }
+    
+    #address_icon{
+        margin-bottom: 3.5vw;
+    }
+
+    #contact_us{
+        flex-direction: column;
+    }
+}
